@@ -1,0 +1,101 @@
+body {background-color: #f1f2f6}
+* {font-family: 'Source Sans Pro', sans-serif;}
+
+#nav-top {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 55px;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(#fff, #fff , #f1f2f6);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+#nav-top a {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #555;
+}
+#nav-side {
+    height: 100%;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    margin-left: 10px;
+    margin-top: 53px;
+    padding-top: 20px;
+}
+#nav-side a {
+    padding: 8px 6px 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+    display: block; 
+    border-bottom: 2px solid #f1f2f6;
+    border-left: 2px solid #f1f2f6;
+    border-right: 2px solid #f1f2f6;
+    background-color: #fff !important;
+}
+#btn-caret {float: right;padding-right: 10px;margin-top: 2px;}
+#down-caret {float: right;padding-right: 10px;margin-top: 2px;display: none;}
+
+#main {margin-left: 475px;padding-top: 50px;background-color: #fff !important;height: 100%;width: auto;}
+
+.content-title{font-size: 45px;font-weight:bold;color: #777;padding-left: 20px;}
+.logo{margin-top:-5px;height: 40px;}
+.userlog {
+    font-size: 14px;
+    line-height: 58px;
+    padding-right: 25px;
+    color: #888;
+}
+a#log_out{display: none;}
+.logout a {
+    position: absolute;
+    cursor: pointer;
+}
+.toggle-show{font-size: 16px;display:none;}
+.toggle-hide{font-size: 16px;display:none;line-height: 50px;padding-right: 20px;color:#888;}
+
+@media screen and (max-width:1366px) {
+    #nav-side{display: block;}
+    #nav-side{width: 320px;margin-top: 50;}
+    #nav-top{height: 55px;}
+    #main{margin-left: 343px;padding-top: 40px;}
+    .content-title{font-size: 30px;}
+    .logo{height: 40px;margin-top: -5px;}
+    .userlog{font-size: 14px;line-height: 60px;}
+}
+/* Mobile Screen min*/
+@media screen and (max-width:768px) {
+    #nav-side{display: none;}
+    .logout_btn{display: none;}
+    a#log_out{display: block;}
+    #nav-top{height: 50px;margin-bottom: -10px;}
+    #main{margin-left: 7px;margin-right: 7px;height:auto;}
+    .content-title{font-size: 25px;margin-left: -20px;margin-top: 10px;}
+    .logo{height: 35px;margin-left: -10px;margin-top: -3px;}
+    .userlog{display: none;}
+    .toggle-show, .toggle-hide{display: block; line-height: 50px;padding-right: 25px;font-size: 12px;color:#888;}
+    .table-responsive{border: none;}
+    .modal-title{font-size: 18px;}
+    #nav-side{padding-top: 0px;}
+}
+
+/* Window screen size 1366x768 */
+.modal-title {font-size: 25px;color: #777;font-weight: 600;}
+
+.modal-header{background-color: #f1f2f6;background-image: linear-gradient(#fff, #fff , #f1f2f6);border-bottom: 2px solid #dfe4ea;border-top-left-radius: 15px;border-top-right-radius: 15px;}
+.modal-footer{background-color: #fff;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
+.labels{color: #777; font-size: 15px;}
+.modal-body{padding-top: 20px;}
+.required-logo{color: red;font-size: 20px;margin-left: 10px;}
+.table-header{color: #333;font-size: 14px;font-weight: 500;}
+#student-table, #admin-table, #faculty-table, #course-table, #subject-table, #position-table, #active-table , #schedule-table, #question-table td{font-size: 14px;color:#555};
+
